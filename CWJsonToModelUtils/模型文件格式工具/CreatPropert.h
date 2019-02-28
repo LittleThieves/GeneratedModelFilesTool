@@ -19,19 +19,6 @@ NS_ASSUME_NONNULL_BEGIN
 @interface CreatPropert : NSObject
 
 #pragma mark - 创建模型文件方法
-/**
- 创建模型文件方法
-
- @param obj 数据对象
- @param fileName 模型类名称
- @param context 模型name 默认是空字符串""
- @param savePath 保存创建模型文件的路径
- @param isNULL 判断是不是NSNULL对象转NSString
- @param isDATE 判断是不是NSDate对象转NSString
- @param isNUMBER 判断是不是NSNumber对象转NSString
- @param category 采用什么赋值方式（kvc，jsmodel，其他)
- @param modelName 用户输入数据模型名称
- */
 + (void)creatProperty:(id)obj//数据对象
              fileName:(NSString *)fileName//模型类名称
           WithContext:(NSString *)context//模型name 默认是空字符串""
